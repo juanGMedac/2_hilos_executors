@@ -27,7 +27,7 @@ public class EjemploExecutorFuture {
         //System.out.println(resultado.isDone());
         while(!resultado.isDone()){
             System.out.println("ejecutando tarea ....");
-            TimeUnit.MILLISECONDS.sleep(1500);
+            TimeUnit.MILLISECONDS.sleep(500);
         }
         System.out.println("Obtenemos resultado de la tarea: " + resultado.get());
         System.out.println("Finaliza la tarea: " + resultado.isDone());

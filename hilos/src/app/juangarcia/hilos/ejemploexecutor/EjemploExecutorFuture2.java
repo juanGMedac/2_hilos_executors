@@ -5,7 +5,7 @@ import java.util.concurrent.*;
 public class EjemploExecutorFuture2 {
     public static void main(String[] args) throws InterruptedException, ExecutionException, TimeoutException {
 
-        ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(3);
+        ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(2);
 
         System.out.println("Tamaño del pool: " + executor.getPoolSize());
         System.out.println("Cantidad de tareas en cola: " + executor.getQueue().size());
@@ -24,6 +24,7 @@ public class EjemploExecutorFuture2 {
 
         Callable<Integer> tarea2 = () -> {
             System.out.println("Iniciando tarea 3 ...");
+            System.out.println("Cantidad de tareas en cola: " + executor.getQueue().size());
             TimeUnit.SECONDS.sleep(3);
             return 10;
         };

@@ -17,11 +17,11 @@ public class EjemploSincronizacionThread {
     public synchronized static void imprimirFrases(String frase1, String frase2){
         System.out.print(frase1);
 
-        try {
+    /*    try {
             Thread.sleep(500);
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }
+        }*/
         System.out.println(frase2);
     }
 }

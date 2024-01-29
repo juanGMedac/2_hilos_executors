@@ -9,7 +9,7 @@ import java.util.concurrent.*;
 public class EjemploExecutorProductorConsumidor {
     public static void main(String[] args) throws InterruptedException, ExecutionException, TimeoutException {
 
-        ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(2);
+        ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(3);
 
         System.out.println("Tamaño del pool: " + executor.getPoolSize());
         System.out.println("Cantidad de tareas en cola: " + executor.getQueue().size());
