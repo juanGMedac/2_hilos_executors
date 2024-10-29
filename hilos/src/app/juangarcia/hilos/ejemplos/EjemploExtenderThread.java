@@ -4,7 +4,7 @@ import app.juangarcia.hilos.ejemplos.threads.NombreThread;
 
 public class EjemploExtenderThread {
     public static void main(String[] args) throws InterruptedException {
-        Thread hilo = new NombreThread("Jhon Doe");
+        Thread hilo = new NombreThread("Lucas");
         hilo.start();
         // Thread.sleep(2);
         Thread hilo2 = new NombreThread("Maria");
